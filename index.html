@@ -1,161 +1,225 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap</title>
-    <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" 
-rel="stylesheet" 
-integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" 
-crossorigin="anonymous">
-</head>
-<body>
-    <!--menu-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-inverse" style="background-color: #A0A603">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Natutintas</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-light" type="submit">Pesquisar</button>
-            </form>
-          </div>
-        </div>
-      </nav>
 
-      
-      <!--card-->
-      <div class="card" style="width: 18rem;">
-        <div class="card-header">
-          Featured
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">An item</li>
-          <li class="list-group-item">A second item</li>
-          <li class="list-group-item">A third item</li>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    .tm-social {
+      width: 50px;
+      height: 50px;
+    }
+
+    .bg {
+      background-color: #e8c374;
+    }
+  </style>
+
+
+
+  <title>Bootstrap</title>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+
+<body class="bg">
+  <!--menu-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-inverse" style="background-color: #A0A603">
+    <div class="container-fluid" id="#">
+      <a class="navbar-brand" href="#">
+        <img src="assets/img/favicon_created_by_logaster.ico" alt="Logo da marca" width="22" height="22">
+        Natutintas</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#modulos">Módulos do curso</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#experimentando">Experimentando</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#inscreva">Inscreva-se</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#redes">Nossas Redes</a>
+          </li>
         </ul>
       </div>
+    </div>
+  </nav>
+  <!--/menu-->
 
-      <!--carousel com 4 imagens-->
-      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="..." class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+  <!--carousel com 4 imagens-->
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/img/tintas-coloridas1.jpg" class="d-block w-100" alt="Primeiro slide">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/img/tintas-pote.jpg" class="d-block w-100" alt="Segundo slide">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/img/tintas-flores.jpg" class="d-block w-100" alt="Terceiro slide">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/img/pano-mao.jpg" class="d-block w-100" alt="Quarto slide">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!--/carousel-->
+
+  <!--jumbotron-->
+  <div class="jumbotron jumbotron-fluid" id="modulos">
+    <div class="container">
+      <h1 class="display-4">As cores da natureza</h1>
+      <p class="lead">Venha explorar toda a beleza que a natureza tem a oferecer</p>
+    </div>
+  </div>
+  <!--/jumbotron-->
+
+
+  <div class="container">
+    <!--card-->
+    <div class="card" style="width: 18rem;">
+      <div class="card-header">
+        O que irá aprender
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Primeiro módulo</li>
+        <li class="list-group-item">Segundo módulo</li>
+        <li class="list-group-item">Terceiro módulo</li>
+      </ul>
+    </div>
+    <!--/card-->
+
+    <div class="row mt-5 mb-5">
+      <div class="col-md-6">
+        <h3 id="experimentando">Experimentando</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim illum culpa nulla ea corrupti beatae. Dolores
+          quo aliquid dolore omnis natus expedita facere a possimus iusto, dicta non suscipit fugit architecto minus
+          vero
+          repudiandae rerum est dignissimos iste! Possimus praesentium libero molestias tenetur dignissimos, officia
+          delectus
+          sapiente facilis nemo esse!</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim illum culpa nulla ea corrupti beatae. Dolores
+          quo aliquid dolore omnis natus expedita facere a possimus iusto, dicta non suscipit fugit architecto minus
+          vero
+          repudiandae rerum est dignissimos iste! Possimus praesentium libero molestias tenetur dignissimos, officia
+          delectus
+          sapiente facilis nemo esse!</p>
       </div>
 
-      <!--video-->
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/6BTUex4L4NE" 
-      title="YouTube video player" 
-      frameborder="0" 
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-      allowfullscreen></iframe>
+      <div class="col-md-6">
+        <!--video-->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/6BTUex4L4NE" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+        <!--/video-->
 
-      <!--formulário-->
-      <form class="row g-3 needs-validation" novalidate>
-        <div class="col-md-4">
-          <label for="validationCustom01" class="form-label">First name</label>
-          <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
-          <div class="valid-feedback">
-            Looks good!
-          </div>
-        </div>
-        <div class="col-md-4">
-          <label for="validationCustom02" class="form-label">Last name</label>
-          <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
-          <div class="valid-feedback">
-            Looks good!
-          </div>
-        </div>
-        <div class="col-md-4">
-          <label for="validationCustomUsername" class="form-label">Username</label>
-          <div class="input-group has-validation">
-            <span class="input-group-text" id="inputGroupPrepend">@</span>
-            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
-            <div class="invalid-feedback">
-              Please choose a username.
+      </div>
+    </div>
+
+    <!--formulário-->
+
+    <div class="row mb-5">
+      <div class="col-md-12">
+        <h4 class="text-center">Entre em contato conosco!</h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <form class="row g-3 needs-validation" novalidate id="inscreva">
+          <div class="col-md-4">
+            <label for="validationCustom01" class="form-label">First name</label>
+            <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+            <div class="valid-feedback">
+              Looks good!
             </div>
           </div>
-        </div>
+          <div class="col-md-4">
+            <label for="validationCustom02" class="form-label">Last name</label>
+            <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="col-md-4">
+            <label for="validationCustomUsername" class="form-label">Username</label>
+            <div class="input-group has-validation">
+              <span class="input-group-text" id="inputGroupPrepend">@</span>
+              <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend"
+                required>
+              <div class="invalid-feedback">
+                Please choose a username.
+              </div>
+            </div>
+          </div>
+          <div class="col-12 d-flex justify-content-end">
+            <button class="btn btn-success" type="submit">Enviar </button>
+          </div>
+          </form>
+      </div>
+    </div>
 
 
-      
 
     
+      <!--/formulário-->
 
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" 
+      <!--footer-->
+      <hr>
+      <footer class="center" id="redes">
+
+        <div class="container d-flex justify-content-center">
+          <a href="https://br.pinterest.com/search/pins/
+                ?q=natural%20dye&rs=typed&term_meta[]=natural%7Ctyped&term_meta[]
+                =dye%7Ctyped" target="_blank" class="p-3">
+            <img width="50px" height="50px" src="assets/img/logotipo-do-pinterest.png" alt="Logo do Pinterest">
+          </a>
+
+          <a href="https://www.instagram.com/explore/tags/naturaldye/?hl=pt-br" target="_blank" class="p-3">
+            <img width="50px" height="50px" src="assets/img/instagram.png" alt="Logo do Instagram">
+          </a>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <p class="text-center">
+              Todos os direitos reservados a Aline Brilhante &copy;
+            </p>
+          </div>
+        </div>
+        
+      </footer>
+      <!--/footer-->
+  </div>
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
     crossorigin="anonymous"></script>
 
-    <!--footer-->
-    <hr>
-    <footer class="center">
 
-        <div class="container">
-            <a href="https://br.pinterest.com/search/pins/
-            ?q=natural%20dye&rs=typed&term_meta[]=natural%7Ctyped&term_meta[]
-            =dye%7Ctyped" target="_blank">
-                <img width="50px" height="50px" src="assets/img/logotipo-do-pinterest.png" 
-                alt="Logo do Pinterest">
-            </a>
-
-            <a href="https://www.instagram.com/explore/tags/naturaldye/?hl=pt-br" target="_blank">
-                <img width="50px" height="50px" src="assets/img/instagram.png" 
-                alt="Logo do Instagram">
-            </a>
-        </div>
-        <p>
-            Todos os direitos reservados a Aline Brilhante &copy;
-        </p>  
-    </footer>
 
 
 
 </body>
+
 </html>
